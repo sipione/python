@@ -1,2 +1,49 @@
-# python
-my quick projects
+# python registration (name and age)
+my quick project about add name and age in a doc and recover it with option to read a member information
+
+#  importing libraries, a module called "cadastro" was created to contain the created functions.
+import cadastro
+from time import sleep
+
+# Registration file existence check, if not then one will be created automatically.
+arq = 'cadastrados.txt'
+cadastro.arquivoexiste(arq)
+
+# Main program
+cadastro.titulo("SISTEMA DE CADASTROS")
+while True:
+    cadastro.menu("Cadastrar Novo", "Ver resumo", "Busca de cadastrados", "Sair do sistema")
+    try:
+        resp = int(input('Qual a sua escolha? '))
+    except:
+        print('O valor introduzido não é válido, tente novamente!')
+    else:
+        if resp > 4 or resp < 1:
+            print('Só existem 4 opções, escolha de 1 a 4!')
+            print('-'*50)
+            sleep(2)
+        elif resp == 1:
+            cadastro.titulo("NOVO REGISTRO")
+            print('Cadastrando um novo elemento...')
+            sleep(1.5)
+            cadastro.novocadastro(arq)
+        elif resp == 2:
+            sleep(1)
+            cadastro.titulo("ELEMENTOS CADASTRADOS")
+            cadastro.lerarquivo(arq)
+            cadastro.lista.clear()
+            print('Esse é a lista de cadastrados!')
+            print('-'*50)
+            sleep(2)
+        elif resp == 3:
+            cadastro.titulo("BUSCA INDIVIDUAL")
+            print('Buscando dados no sistema...')
+            sleep(1)
+            cadastro.lerarquivo(arq)
+            cadastro.escolhacadastrado()
+        elif resp == 4:
+            print('Saindo do sistema...')
+            sleep(1.5)
+            break
+
+print('<< Obrigado! >>')
