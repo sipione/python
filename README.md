@@ -1,10 +1,10 @@
-#MY FIRST PYTHON PROGRAM
+# MY FIRST PYTHON PROGRAM
 
-##HISTORY OF MY PROJECT
+## HISTORY OF MY PROJECT
 
 That was my first CRUD system which i created using only python language. It was the language that i started to learn programming and, since the first time, was amazing understand how it works and how easy is the adaptation by the syntaxes and the commands. The lib is amazing and I’m completely in love for this language hahahaha. So, nowadays I study other languages cause is mandatory to be a professional complete, in other hand surely I’ll focus again in this language and I go deep in the python world. So, this project is really simple but represents a lot to me, someone who started and keep learning day by day, alone but with a lot of hangry of knowledge and a sincerely wish to work with what I love, programming! 
 
-##HOW IT WORKS
+## HOW IT WORKS
 
 At first, this project has three documents, the registry_consult.py is the main program; thus, the cadastro.py is the archive where I developed all the function that is used in the main program, I did it in order to make the main program more clear, easier to read and to update; the last one is the cadastrados.txt where save name and age of the people.
 
